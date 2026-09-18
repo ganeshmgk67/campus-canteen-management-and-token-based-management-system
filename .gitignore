@@ -1,0 +1,25 @@
+# ─── Secrets & environment ────────────────────────────────────
+# Real credentials and the JWT secret live here. NEVER commit .env.
+.env
+.env.*
+!.env.example
+
+# ─── Node ─────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+*.tsbuildinfo
+
+# ─── React build output ───────────────────────────────────────
+client/build/
+client/.eslintcache
+
+# ─── Test artifacts & coverage ────────────────────────────────
+coverage/
+*.lcov
+
+# ─── Editors / OS ─────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

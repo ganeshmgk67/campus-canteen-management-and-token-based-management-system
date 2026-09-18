@@ -1,0 +1,23 @@
+{
+  "name": "canteen-server",
+  "version": "2.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "node migrate-wallet.js",
+    "db:reset": "node reset-db.js",
+    "wallet:audit": "node wallet-audit.js",
+    "test": "node tests/integration.test.js",
+    "seed:rush-hour": "node seed-rush-hour.js",
+    "migrate:category": "node migrate-category.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5"
+  }
+}
